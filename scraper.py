@@ -277,7 +277,7 @@ def run_matter(request: MatterRequest, headless: bool = True) -> ScrapeResult:
         download_dir = Path("downloads") / f"{request.matter_number}_{request_id}"
         
         # Limit changed to 10 here to grab all 10 documents
-        downloaded_count = download_documents(page, request.doc_type, download_dir, limit=10)
+        downloaded_count = download_documents(page, request.doc_type, download_dir, limit=3)
 
         return ScrapeResult(
             metadata=metadata,

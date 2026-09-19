@@ -1,0 +1,16 @@
+# Auth - never commit these
+credentials.json
+token.json
+
+# Runtime output - regenerated on each run
+downloads/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# macOS
+.DS_Store
+
