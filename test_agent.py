@@ -1,7 +1,18 @@
 from process import process_email
 
-# Simulate an incoming email body for your technical assignment
-sample_body = "Hi, can you send me the Exhibits for matter M99999?"
+# Happy path to test the process_email function with a sample email body.
+sample_body = "Hi, could you please send me the Exhibits for matter M12205? Thanks"
+
+"""
+# Missing doc type
+sample_body = "Hi, I need documents for matter M12205 please.\nThanks"
+
+# Missing matter number
+sample_body = "Hi, could you send me the Exhibits please?\nThanks" 
+
+# Invalid matter number
+sample_body = "Hi, could you send me the Exhibits for matter M99999?\nThanks"
+"""
 
 print("Testing process_email pipeline...")
 result = process_email(sample_body)
